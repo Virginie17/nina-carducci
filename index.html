@@ -2,22 +2,68 @@
 <!--ajout de la langue-->
 <html lang="fr">
 <head>
+	<!--ajout balise title-->
+	<title>Nina Carducci - Photographe professionnel situé à Bordeaux</title>
+	<!--Meta-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Photographe professionnel,je vous propose de saisir vos moments les plus précieux et garder un souvenir immortel.">
+	<meta name="author" content="Nina Carducci">
+	<meta name="keywords" content="photographe, professionnel, mariage, entreprise, portrait, concert, Bordeaux, shooting,album">
+	<!--Meta tags facebook-->
+	<meta property="og:title" content="Nina Carducci - Photographe professionnel a Bordeaux">
+	<meta property="og:description" content="Nina Carducci, photographe professionnelle à Bordeaux. Capturez vos moments les plus précieux avec mes services de shooting photo, retouches et albums personnalisés.">
+	<meta property="og:image" content=" https://virginie17.github.io/nina-carducci/assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp">
+	<meta property="og:url" content=" https://virginie17.github.io/nina-carducci/">
+	<!--Meta tags twitter-->
+	<meta name="twitter:title" content="Nina Carducci - Photographe professionnel a Bordeaux">
+	<meta name="twitter:description" content="Nina Carducci, photographe professionnelle à Bordeaux. Capturez vos moments les plus précieux avec mes services de shooting photo, retouches et albums personnalisés.">
+	<meta name="twitter:image" content=" https://virginie17.github.io/nina-carducci/assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp">
+	<meta name="twitter:url" content=" https://virginie17.github.io/nina-carducci/">
+	<!--ajout des balises link-->
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-	
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!--ajout balise title-->
-	<title>Nina Carducci - Photographe professionnel situé à Bordeaux</title>
-	<!--ajout des balises meta-->
+	<!--ajout du schema.org pour ameliorer la visibilité du site sur les moteurs de recherche-->
+	<script type="application/ld+json">
+		{
+		  "@context": "http://schema.org",
+		  "@type": "ProfessionalService",
+		  "name": "Nina Carducci - Photographe professionnel",
+		  "image": "https://virginie17.github.io/nina-carducci/assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp",
+		  "@id": "",
+		  "url": "https://virginie17.github.io/nina-carducci/",
+		  "telephone": "05 56 67 78 89",
+		  "address": {
+			"@type": "PostalAddress",
+			"streetAddress": "68 Avenue Alsace-Lorraine",
+			"addressLocality": "Bordeaux",
+			"postalCode": "33200",
+			"addressCountry": "FR"
+		  },
+		  
+		  "openingHoursSpecification": [{
+			"@type": "OpeningHoursSpecification",
+			"dayOfWeek": [
+			  "Monday",
+			  "Tuesday",
+			  "Wednesday",
+			  "Thursday",
+			  "Friday"
+			],
+			"opens": "10:00",
+			"closes": "19:00"
+		  }],
+		  "sameAs": [
+			"https://www.instagram.com/ninacarducci.photo/?hl=fr"
+		  ]
+		}
+		</script>
 </head>
 <body>
 	<!--ajout balise header-->
-	<header>
-		<div class="top-header">
+		<header class="top-header">
 			<h1 class="name">Nina Carducci</h1>
 			<nav class="nav">   
 				<ul>
@@ -25,10 +71,10 @@
 					<li><a href="#gallery">Galerie</a></li>
 					<li><a href="#services">Service</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt=""></a></li>
+					<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.webp" alt="logo instagram" aria-label="instagram de nina carducci"></a></li>
 				</ul>
 			</nav>
-		</div>
+		</header>
 	</header>
 		<section id="header">
 
@@ -60,18 +106,19 @@
 			</div>
 		</section>		
 	
-
+<!--ajout de la balise main-->
+<main>
 
 <section id="about">
 	<div class="picture left">
 		<img src="./assets/images/nina.webp" alt="photo de Nina Carducci">
 	</div>
-	<div id="about-me">
+	<article id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
 		<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j'y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
 		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n'avons qu'une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 			C'est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l'amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
-	</div>
+	</article>
 </section>
 <section id="gallery">
 	<h2 class="title">Portfolio</h2>
@@ -161,10 +208,27 @@
 		</div>
 	</div>
 </section>
-<script defer src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script defer src="./assets/maugallery.js"></script>
-	<script defer src="./assets/scripts.js"></script>
+</main>
+<!--ajout de la balise script-->
+<footer>
+	<div class="footer_left">
+		<ul>
+			<li>Nina Carducci</li>
+			<li>Photographe Professionnelle</li>
+			<li>68 Avenue Alsace-Lorraine, 33200 Bordeaux</li>
+			<li>05 56 67 78 89</li>
+			<li>Du lundi au vendredi de 10 h à 19 h</li>
+		</ul>
+	</div>
+	<div class="footer_right">
+		<p>© Nina Carducci</p>
+	</div>
+</footer>
+<!--ajout des balises script-->
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script defer="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script defer src="./assets/maugallery.js"></script>
+<script defer src="./assets/scripts.js"></script>
 
 </body>
 </html>
