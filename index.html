@@ -14,18 +14,25 @@
 	<!--Meta tags facebook-->
 	<meta property="og:title" content="Nina Carducci - Photographe professionnel a Bordeaux">
 	<meta property="og:description" content="Nina Carducci, photographe professionnelle à Bordeaux. Capturez vos moments les plus précieux avec mes services de shooting photo, retouches et albums personnalisés.">
-	<meta property="og:image" content=" https://virginie17.github.io/nina-carducci/assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp">
+	<meta property="og:image" content=" https://virginie17.github.io/nina-carducci/assets/images/nina.webp">
 	<meta property="og:url" content=" https://virginie17.github.io/nina-carducci/">
 	<!--Meta tags twitter-->
 	<meta name="twitter:title" content="Nina Carducci - Photographe professionnel a Bordeaux">
 	<meta name="twitter:description" content="Nina Carducci, photographe professionnelle à Bordeaux. Capturez vos moments les plus précieux avec mes services de shooting photo, retouches et albums personnalisés.">
-	<meta name="twitter:image" content=" https://virginie17.github.io/nina-carducci/assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp">
+	<meta name="twitter:image" content=" https://virginie17.github.io/nina-carducci/assets/images/nina.webp">
 	<meta name="twitter:url" content=" https://virginie17.github.io/nina-carducci/">
+	<!--meta rich snippet-->
+	<meta itemprop="name" content="Nina Carducci - Photographe professionnel a Bordeaux">
+	<meta itemprop="description" content="Nina Carducci, photographe professionnelle à Bordeaux. Capturez vos moments les plus précieux avec mes services de shooting photo, retouches et albums personnalisés.">
+	<meta itemprop="image" content=" https://virginie17.github.io/nina-carducci/assets/images/nina.webp">
+
+
 	<!--ajout des balises link-->
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
 	<!--ajout du schema.org pour ameliorer la visibilité du site sur les moteurs de recherche-->
 	<script type="application/ld+json">
 		{
@@ -87,19 +94,31 @@
 				</div>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img
-	srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
-	class="d-block w-100"
+						<picture>
+							<img class="d-block w-100" 
+							src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
+	srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp 768w,
+	./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp 1920w"
 	sizes="(max-width: 768px) 100vw, 100vw"
 	alt="photo de ryoji"
-	loading="lazy"
-	/>
+	loading="lazy">
+						</picture>
+						
 					</div>
 					<div class="carousel-item">
-						<img srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100" sizes="(max-width: 768px) 100vw, 100vw" alt="photo nicolas green" loading="lazy">
+						<img class="d-block w-100" srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp 1920w,
+						./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp 768w"
+						sizes="(max-width: 768px) 100vw, 100vw"
+						src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
+						alt="photo de Nicholas" loading="lazy">
+					
 					</div>
 					<div class="carousel-item">
-						<img srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100" sizes="(max-width: 768px) 100vw, 100vw" alt="photo edward" loading="lazy">
+						<img class="d-block w-100" srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp 1920w,
+						./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp 768w"
+						sizes="(max-width: 768px) 100vw, 100vw"
+						src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
+						alt="photo d edward" loading="lazy">
 					</div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -116,9 +135,7 @@
 
 <section id="about">
 	<div class="picture left">
-			<picture>
-				<img src="./assets/images/nina.webp" alt="photo de Nina Carducci" loading="lazy">
-			</picture>
+				<img src="./assets/images/nina.webp" alt="photo de Nina Carducci">
 	</div>
 	<article id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
@@ -234,7 +251,8 @@
 			</form>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/camera.webp" alt="photo camera">
+			<img src="./assets/images/camera.webp" alt="photo camera"
+				loading="lazy">
 		</div>
 	</div>
 </section>
@@ -255,7 +273,7 @@
 	</div>
 </footer>
 <!--ajout des balises script-->
-<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script defer src="./assets/maugallery.js"></script>
 <script defer src="./assets/scripts.js"></script>
